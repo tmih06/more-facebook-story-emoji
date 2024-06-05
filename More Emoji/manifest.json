@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "More emoji by tminhdz",
+    "description": "More emoji by tminhdz",
+    "version": "1.0.0",
+    "icons": {},
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.facebook.com/*"],
+            "css": ["styles.css"]
+        }
+    ],
+    "permissions": ["tabs", "https://www.facebook.com/*"]
+}
